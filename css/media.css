@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+.body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #fafafa;
+	color: black;
+	/* font-weight: bold; */
+}
+.header,
+.header-first-child,
+.header-third-child {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	/* background-color: #d1d1d1; */
+}
+.header > * {
+	flex: 0 0 33.3%;
+}
+.header-second-child {
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+}
+.header-third-child {
+	justify-content: end;
+}
+.header-third-child > * {
+	flex: 0 0 10%;
+}
+.header-third-child .fb-icon {
+	flex: 0 0 2%;
+}
+.header-second-child p {
+	margin-bottom: 0;
+}
+.header-second-child a {
+	color: #000;
+}
+.header-second-child a:hover {
+	color: #000000b3;
+}
+.pipe {
+	display: inline-block;
+	height: 14px;
+	margin: 0 10px;
+	width: 1px;
+	border-left: 1.5px solid #333;
+	vertical-align: middle;
+}
+.nav-ribbon {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2%;
+}
+.nav-ribbon-first-child {
+	flex: 0 0 20%;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+.india-button {
+	display: flex;
+	cursor: pointer;
+}
+.india-button i {
+	display: inline-block;
+	margin-left: 10%;
+}
+.nav-ribbon-last-child {
+	flex: 0 0 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-ribbon-last-child .last-child {
+	flex: 0 16.6%;
+}
+.nav-bar {
+	position: relative;
+}
+.globe,
+.caret {
+	font-size: 150%;
+}
+.globe {
+	margin-right: 8px;
+}
+.action-button {
+	background-color: #a239ca;
+	width: 100%;
+	padding: 10%;
+	border: 0;
+	border-radius: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.india-offices-title {
+	font-weight: bold;
+	font-size: 300%;
+	margin-bottom: 4%;
+}
+.action-button i {
+	display: inline-block;
+	margin-right: 10px;
+}
+.logo img {
+	width: 8%;
+}
+.logo a {
+	text-decoration: none;
+}
+.action-button a {
+	color: #fff;
+}
+
+.action-button a:hover {
+	color: #fff;
+}
+.link {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+}
+.link:hover {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.countries > .caret,
+.countries > p {
+	cursor: pointer;
+}
+.banner {
+	background-image: linear-gradient(#00000036, #00000036),
+		url('../assets/images/jon-tyson-A-obUh61bKw-unsplash.jpg');
+	background-position: 50% 45%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banner-text {
+	font-size: 500%;
+	font-weight: bold;
+	line-height: 150%;
+	color: #fff;
+	text-align: center;
+}
+.banner-button {
+	background-color: #a239ca;
+	width: 20%;
+	height: 50px;
+	border: 0;
+	border-radius: 30px;
+}
+.banner-button a {
+	color: #fff;
+	font-size: 130%;
+	font-weight: bold;
+	padding: 2%;
+}
+.banner-button a:hover {
+	color: #fff;
+}
+.banner-button i {
+	display: inline-block;
+	margin-right: 3%;
+}
+.countries {
+	display: flex;
+	flex-direction: column;
+}
+.countries a {
+	/* margin-bottom: 4%; */
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 120%;
+	width: 100%;
+	padding: 10%;
+	border-bottom: 2px solid #eeeeee;
+	transition: all 0.5s;
+}
+.countries a:hover {
+	background-color: #eeeeee;
+	color: rgb(46, 46, 46);
+}
+.drop-down {
+	border: 0;
+	width: 11%;
+	height: 0;
+	position: absolute;
+	top: 80%;
+	left: -2%;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+main {
+	overflow: hidden;
+	margin: 4% 0;
+}
+footer {
+	padding: 4%;
+	background-color: #53565a;
+	color: #eaeaea;
+}
+.india-offices-title {
+	margin-bottom: 2%;
+}
+.india-offices-content h3 {
+	font-size: 200%;
+}
+.textarea {
+	height: 20%;
+}
+.form-button {
+	width: 100%;
+	padding: 2%;
+	border-radius: 30px;
+	border: none;
+	font-size: 120%;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: rgb(235, 235, 235);
+}
+.footer-icon {
+	display: inline-block;
+	margin-right: 2%;
+}
+footer .social-icon {
+	color: #fff;
+}
+header .social-icon {
+	color: #000;
+}
+.social-icon {
+	font-size: 120%;
+	transition: all 0.8s;
+}
+.ln-icon:hover {
+	color: #2867b2;
+}
+.tw-icon:hover {
+	color: #1da1f2;
+}
+.fb-icon:hover {
+	color: #4267b2;
+}
+.copyright {
+	font-weight: bold;
+}
+.tabs {
+	list-style-type: none;
+	font-size: 200%;
+	padding: 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+	margin: 0 0 10% 0;
+}
+.tab {
+	cursor: pointer;
+	padding: 1% 2%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	transition: all 0.2s;
+}
+.tab:hover {
+	background-color: rgb(184, 184, 184);
+}
+.tabs .active {
+	background-color: rgba(0, 0, 0, 0.4);
+	font-weight: bold;
+}
+.active h2 {
+	font-weight: bold;
+	margin-bottom: 4%;
+}
+[data-tab-content] {
+	display: none;
+}
+.active[data-tab-content] {
+	display: block;
+}
+.editorial h3,
+.press h3,
+.electronic h3 {
+	margin: 1em 0 0.5em 0;
+	font-weight: bold;
+}
+.editorial p,
+.press p,
+.electronic p {
+	margin: 0 0 5em 0;
+	color: #53565a;
+}
+.press a {
+	text-decoration: none;
+	color: black;
+}
+.press a:hover{
+	color: black;
+}
+iframe {
+	height: 20em;
+}

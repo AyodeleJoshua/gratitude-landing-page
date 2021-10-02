@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+.body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #fafafa;
+	color: black;
+	/* font-weight: bold; */
+}
+
+.header {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	/* background-color: #d1d1d1; */
+}
+.header-second-child {
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+}
+.header-second-child a {
+	color: #000;
+}
+.header-second-child a:hover {
+	color: #000000b3;
+}
+.pipe {
+	display: inline-block;
+	height: 14px;
+	margin: 0 10px;
+	width: 1px;
+	border-left: 1.5px solid #333;
+	vertical-align: middle;
+}
+.nav-ribbon {
+	margin-bottom: 1%;
+}
+.nav-ribbon-first-child {
+	font-weight: bold;
+}
+.action-button {
+	background-color: #a239ca;
+	width: 100%;
+	padding: 8%;
+	border: 0;
+	border-radius: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.logo img {
+	width: 8%;
+}
+.logo a {
+	text-decoration: none;
+}
+.action-button a {
+	color: #fff;
+}
+
+.action-button a:hover {
+	color: #fff;
+}
+.link {
+	text-decoration: none;
+	color: #000 !important;
+	font-weight: bold;
+	cursor: pointer;
+}
+.link:hover {
+	color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.countries {
+	cursor: pointer;
+}
+.banner {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../assets/images/pexels-cottonbro-4065876.jpg');
+	background-position: 50% 40%;
+	background-size: cover;
+	height: 500px;
+	overflow: hidden;
+	width: 100%;
+}
+.banner-text {
+	font-size: 350%;
+	font-weight: bold;
+	line-height: 150%;
+	color: #fff;
+	margin-top: 80px;
+}
+.banner-button {
+	background-color: #a239ca;
+	width: 20%;
+	height: 50px;
+	border: 0;
+	border-radius: 30px;
+}
+.banner-button a {
+	color: #fff;
+	font-size: 130%;
+	font-weight: bold;
+	padding: 2%;
+}
+.banner-button a:hover {
+	color: #fff;
+}
+.banner-button i {
+	display: inline-block;
+	margin-right: 3%;
+}
+.countries {
+	display: flex;
+	flex-direction: column;
+}
+.countries a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 120%;
+	width: 100%;
+	padding: 10%;
+	transition: all 0.5s;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.countries a:hover {
+	background-color: #eeeeee;
+	color: rgb(46, 46, 46);
+}
+.drop-down {
+	border: 0;
+	width: 130%;
+	height: 0;
+	font-size: 1.2em;
+	font-weight: normal;
+	position: absolute;
+	top: 80%;
+	left: -2%;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.drop-down p {
+	padding: 0.5em 1em;
+	margin: 0;
+}
+.drop-down p:hover {
+	background-color: #eeeeee;
+}
+main {
+	width: 100%;
+	overflow: hidden;
+	/* border: 2px solid red; */
+}
+.main-box-form {
+	overflow: hidden;
+	background-color: #fff;
+}
+.form-group {
+	margin: 3% auto;
+	text-align: center;
+	overflow-x: hidden;
+}
+.form-group > * {
+	height: 50px;
+	padding: 2%;
+	text-transform: uppercase;
+	outline: none;
+}
+.form-group > button {
+	margin-right: 0;
+	padding: 0;
+	background-color: #777777;
+	border: 0;
+}
+.form-group > button .link {
+	color: #fff;
+}
+.client-box,
+.services {
+	margin-bottom: 6%;
+}
+.client-box-content {
+	margin: 3% auto;
+}
+.client-box-content h2,
+.services h2,
+.android-application h2,
+.dream-job-title,
+.everywhere h2,
+.media-coverage-title,
+.india-offices-title {
+	font-weight: bold;
+	font-size: 300%;
+	margin-bottom: 4%;
+}
+.services {
+	background-color: #fff;
+	margin-bottom: 0;
+}
+.services-content {
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+.services-card {
+	padding: 6%;
+	background-color: #f6f6f6 !important;
+	border: 0 !important;
+	border-radius: 20px !important;
+}
+.text-margin {
+	margin-top: 10%;
+}
+.card-1 {
+	padding-bottom: 4%;
+}
+.card-2 {
+	padding-bottom: 4%;
+}
+.card-3 {
+	padding-bottom: 4%;
+}
+.services-title {
+	font-weight: bold;
+	font-size: 120%;
+}
+.services-text {
+	font-weight: normal;
+	font-size: 100%;
+	line-height: 150%;
+}
+.services-button {
+	background-color: #a239ca;
+	border: 0;
+	padding: 4%;
+	border-radius: 30px;
+	width: 100%;
+	font-size: 120%;
+	color: #fff !important;
+	font-weight: bold;
+}
+.services-button-2nd-child {
+	margin-top: 8%;
+}
+.services-link,
+.services-link:hover {
+	color: #fff;
+}
+.everywhere {
+	margin: 3% auto;
+}
+.everywhere h2 {
+	margin-bottom: 1.5%;
+}
+.everywhere h3 {
+	color: #a239ca;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0;
+}
+.everywhere p {
+	text-align: center;
+	font-size: 150%;
+}
+.android-application {
+	background-color: #a239ca;
+}
+.android-application h2 {
+	color: #fff;
+}
+.image-container {
+	overflow: hidden;
+	margin-left: 6%;
+}
+.image-container a {
+	width: 100%;
+}
+.android-phone {
+	width: 100%;
+}
+.android-application-child {
+	padding: 2%;
+}
+.playstore-text,
+.playstore-text > ol {
+	color: #fff;
+	font-weight: normal;
+	font-size: 130%;
+}
+.android-application button {
+	width: 30%;
+	padding: 2%;
+	background-color: #fff;
+	border-radius: 30px;
+	border: none;
+	margin-top: 3%;
+	font-size: 130%;
+	font-weight: bold;
+}
+.android-application button:last-of-type {
+	margin-left: 2%;
+}
+.android-application button a {
+	text-decoration: none;
+	color: #000;
+	width: 100%;
+}
+.dream-job {
+	background-color: #eaeaea;
+	padding: 4%;
+}
+.dream-job-content p {
+	color: #000;
+	font-weight: normal;
+	font-size: 130%;
+}
+.dream-job-content button {
+	width: 50%;
+	padding: 2%;
+	background-color: #a239ca;
+	color: #fff;
+	border-radius: 30px;
+	border: none;
+	margin-top: 2%;
+	font-size: 130%;
+	font-weight: bold;
+}
+.dream-job-content .svg {
+	margin-top: -2%;
+}
+.media-coverage {
+	padding: 4%;
+}
+footer {
+	padding: 4%;
+	background-color: #53565a;
+	color: #eaeaea;
+}
+.india-offices-title {
+	margin-bottom: 2%;
+}
+.india-offices-content h3 {
+	font-size: 200%;
+}
+.textarea {
+	height: 20%;
+}
+.form-button {
+	width: 100%;
+	padding: 2%;
+	border-radius: 30px;
+	border: none;
+	font-size: 120%;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: rgb(235, 235, 235);
+}
+.footer-icon {
+	display: inline-block;
+	margin-right: 2%;
+}
+footer .social-icon {
+	color: #fff;
+}
+header .social-icon {
+	color: #000;
+}
+.social-icon {
+	font-size: 120%;
+	transition: all 0.8s;
+}
+.ln-icon:hover {
+	color: #2867b2;
+}
+.tw-icon:hover {
+	color: #1da1f2;
+}
+.fb-icon:hover {
+	color: #4267b2;
+}
+.copyright {
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 567px) {
+	.drop-down {
+		width: 8em;
+	}
+	.action-button {
+		padding: 3%;
+		width: 50%;
+		border-radius: 30px;
+	}
+	.banner {
+		height: 200px;
+		width: 100%;
+	}
+	.banner-text {
+		margin-top: 0.8em;
+		margin-bottom: 0;
+		font-size: 150%;
+		padding: 3%;
+		line-height: 1.3em;
+	}
+	.banner-button {
+		width: 50%;
+		height: 40px;
+	}
+	.banner-button a {
+		font-size: 100%;
+	}
+	.banner-button i {
+		margin-right: 1%;
+	}
+	.form-group > * {
+		width: 100%;
+		height: 40px;
+		margin-bottom: 8px;
+	}
+	.client-box-content h2,
+	.services h2,
+	.android-application h2,
+	.dream-job-title,
+	.media-coverage-title,
+	.india-offices-title {
+		font-size: 180%;
+	}
+	.everywhere h2 {
+		font-size: 150%;
+		margin-bottom: 3%;
+	}
+	.client-box {
+		margin-bottom: 0;
+	}
+	.services {
+		margin-top: -8%;
+	}
+	.services-content {
+		padding-bottom: 1%;
+	}
+	.services-card {
+		margin-bottom: 10%;
+		padding: 4%;
+	}
+	.card-title {
+		font-size: 120%;
+	}
+	.card-text {
+		margin-top: 2%;
+		font-size: 110%;
+	}
+	.everywhere {
+		margin-bottom: 0;
+	}
+	.everywhere p {
+		font-size: 100%;
+	}
+}
