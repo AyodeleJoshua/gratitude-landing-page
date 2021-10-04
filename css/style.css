@@ -302,6 +302,7 @@ main {
 }
 .android-application button:last-of-type {
 	margin-left: 2%;
+	width: 40%;
 }
 .android-application button a {
 	text-decoration: none;
@@ -318,7 +319,7 @@ main {
 	font-size: 130%;
 }
 .dream-job-content button {
-	width: 50%;
+	width: 80%;
 	padding: 2%;
 	background-color: #a239ca;
 	color: #fff;
@@ -384,7 +385,10 @@ header .social-icon {
 .copyright {
 	font-weight: bold;
 }
-
+.envelope {
+	display: inline-block; 
+	margin-left: 10%;
+}
 @media only screen and (max-width: 567px) {
 	.drop-down {
 		width: 8em;
@@ -426,10 +430,12 @@ header .social-icon {
 	.dream-job-title,
 	.media-coverage-title,
 	.india-offices-title {
-		font-size: 180%;
+		font-size: 150%;
+		text-align: center;
 	}
 	.everywhere h2 {
 		font-size: 150%;
+		text-align: center;
 		margin-bottom: 3%;
 	}
 	.client-box {
@@ -450,7 +456,7 @@ header .social-icon {
 	}
 	.card-text {
 		margin-top: 2%;
-		font-size: 110%;
+		font-size: 100%;
 	}
 	.everywhere {
 		margin-bottom: 0;
@@ -462,11 +468,56 @@ header .social-icon {
 		width: 100%;
 	}
 	.playstore-link button {
-		width: 100%;
+		width: 100% !important;
 		font-size: 100%;
 		padding: .5em .2em;
 		margin-bottom: .5em;
 	}
-	.playstore-link button:last-of-type {
-		/* padding: 0; */
+	.android-application h2 {
+		margin-bottom: .1em;
+	}
+	.android-application {
+		padding-bottom: .4em;
+	}
+	.dream-job-content button {
+		width: 100%;
+		font-size: 100%;
+	}
+	.dream-job-content p {
+		font-size: 100%;
+	}
+	.dream-job-content {
+		padding-bottom: .4em;
+	}
+	.media-coverage {
+		padding-bottom: 0;
+	}
+	.india-offices-content h3 {
+		font-size: 1.5em;
+	}
+	.india-offices-content p {
+		margin-bottom: .1em;
+	}
+	.india-offices-content p.last-paragraph {
+		margin-bottom: 1em;
+	}
+	.envelope {
+		margin: 0 .2em 0 .4em;
+	}
+	.phone {
+		margin: 0 .2em 0 .4em;		
+	}
+	.icon-pack {
+		margin: .5em auto !important;
+	}
+}
+
+@media (max-width: 566px) {
+	.playstore-link {
+		width: 80%;
+		margin: auto;
+	}
+	.image-container {
+		margin: .5em !important;
+	}
 }
