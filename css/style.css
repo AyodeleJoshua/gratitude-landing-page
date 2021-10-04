@@ -458,4 +458,7 @@ header .social-icon {
 	.everywhere p {
 		font-size: 100%;
 	}
+	.playstore-link {
+		width: 100%;
+	}
 }
