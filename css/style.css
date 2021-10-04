@@ -461,4 +461,12 @@ header .social-icon {
 	.playstore-link {
 		width: 100%;
 	}
+	.playstore-link button {
+		width: 100%;
+		font-size: 100%;
+		padding: .5em .2em;
+		margin-bottom: .5em;
+	}
+	.playstore-link button:last-of-type {
+		/* padding: 0; */
 }
