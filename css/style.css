@@ -389,7 +389,16 @@ header .social-icon {
 	display: inline-block; 
 	margin-left: 10%;
 }
-@media only screen and (max-width: 567px) {
+@media (max-width: 566px) {
+	.playstore-link {
+		width: 80%;
+		margin: auto;
+	}
+	.image-container {
+		margin: .5em !important;
+	}
+}
+@media (max-width: 567px) {
 	.drop-down {
 		width: 8em;
 	}
@@ -512,12 +521,3 @@ header .social-icon {
 	}
 }
 
-@media (max-width: 566px) {
-	.playstore-link {
-		width: 80%;
-		margin: auto;
-	}
-	.image-container {
-		margin: .5em !important;
-	}
-}
