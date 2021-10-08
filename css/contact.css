@@ -92,7 +92,7 @@
 .action-button {
 	background-color: #a239ca;
 	width: 100%;
-	padding: 10%;
+	padding: 8%;
 	border: 0;
 	border-radius: 30px;
 	font-weight: bold;
@@ -102,10 +102,6 @@
 	font-weight: bold;
 	font-size: 300%;
 	margin-bottom: 4%;
-}
-.action-button i {
-	display: inline-block;
-	margin-right: 10px;
 }
 .logo img {
 	width: 8%;
@@ -129,82 +125,20 @@
 .link:hover {
 	color: rgba(0, 0, 0, 0.7);
 }
-
-.countries > .caret,
-.countries > p {
-	cursor: pointer;
-}
 .banner {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('../assets/images/lumensoft-technologies-WaGMKmJ2F0Y-unsplash.jpg');
 	background-position: 50% 40%;
 	background-size: cover;
-    background-repeat: no-repeat;
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 	width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	align-items: center;
 }
 .banner-text {
-	font-size: 500%;
+	font-size: 200%;
 	font-weight: bold;
-	line-height: 150%;
 	color: #fff;
 	text-align: center;
-}
-.banner-button {
-	background-color: #a239ca;
-	width: 20%;
-	height: 50px;
-	border: 0;
-	border-radius: 30px;
-}
-.banner-button a {
-	color: #fff;
-	font-size: 130%;
-	font-weight: bold;
-	padding: 2%;
-}
-.banner-button a:hover {
-	color: #fff;
-}
-.banner-button i {
-	display: inline-block;
-	margin-right: 3%;
-}
-.countries {
-	display: flex;
-	flex-direction: column;
-}
-.countries a {
-	text-decoration: none;
-	color: #000;
-	font-weight: bold;
-	font-size: 120%;
-	width: 100%;
-	padding: 10%;
-	border-bottom: 2px solid #eeeeee;
-	transition: all 0.5s;
-}
-.countries a:hover {
-	background-color: #eeeeee;
-	color: rgb(46, 46, 46);
-}
-.drop-down {
-	border: 0;
-	width: 11%;
-	height: 0;
-	position: absolute;
-	top: 80%;
-	left: -2%;
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 0;
-	overflow: hidden;
-	transition: all 0.5s;
 }
 main {
 	overflow: hidden;
@@ -270,10 +204,7 @@ header .social-icon {
 	height: 30em;
 }
 .tabs {
-	display: flex;
 	list-style-type: none;
-	justify-content: space-around;
-	align-items: center;
 	font-size: 200%;
 	padding: 0;
 	border-bottom: 2px solid rgba(0, 0, 0,0.4);
@@ -293,10 +224,69 @@ header .social-icon {
 	background-color: rgba(0, 0, 0,0.4);
 	font-weight: bold;
 }
-.form {
-	margin-top: 30%;
-}
 .form button {
 	background-color: #a239ca;
 	color: #fff;
+}
+
+@media (max-width: 567px) {
+	.action-button {
+		padding: 3%;
+		width: 50%;
+		border-radius: 30px;
+	}
+	.banner {
+		height: 200px;
+		width: 100%;
+	}
+	.banner-text {
+		font-size: 150%;
+	}
+	.india-offices-content h3 {
+		font-size: 1.5em;
+	}
+	.india-offices-content p {
+		margin-bottom: 0.1em;
+	}
+	.india-offices-content p.last-paragraph {
+		margin-bottom: 1em;
+	}
+	.envelope {
+		margin: 0 0.2em 0 0.4em;
+	}
+	.phone {
+		margin: 0 0.2em 0 0.4em;
+	}
+	.icon-pack {
+		margin: 0.5em auto !important;
+	}
+	.tabs {
+		/* justify-content: space-between; */
+	}
+	.tab {
+		flex: 0 0 20%;
+		font-size: 60%;
+	}
+	.active h2 {
+		font-size: 140%;
+	}
+	.active p {
+		font-size: 100%;
+	}
+	.active .iframe {
+		display: none;
+	}
+}
+@media (min-width:568px) {
+	.logo img {
+		width: 12%;
+	}
+	.banner {
+		height: 300px;
+	}
+}
+@media (min-width:1140px) {
+	.banner {
+		height: 400px;
+	}
 }

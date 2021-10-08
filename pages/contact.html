@@ -19,6 +19,7 @@
 		<link rel="icon" type="image/png" href="images/main_logo_favicon.png" />
 		<link rel="stylesheet" type="text/css" href="../css/contact.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -32,90 +33,172 @@
 			integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
 			crossorigin="anonymous"
 		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
 		<script src="../javascript/contact.js" defer></script>
 	</head>
 	<body class="body">
 		<div class="container">
-			<header class="header">
-				<div class="header-first-child">
+			<header class="d-md-flex justify-content-md-between mt-4 mt-md-6 mb-2">
+				<div
+					class="
+						d-none d-md-flex
+						justify-content-md-start
+						align-items-md-center
+						col-md-4
+					"
+				>
 					<div class=""><a href="" class="link">Submit Resume</a></div>
 					<span class="pipe"></span>
 					<div class=""><a href="" class="link">Create Jobs</a></div>
 				</div>
-				<div class="header-second-child logo">
+				<div class="header-second-child logo col-md-4">
 					<a href="">
-						<img src="../assets/images/main_logo_header.png" alt="" />
+						<img src="/assets/images/main_logo_header.png" alt="" />
 						Gratitude India
 					</a>
 				</div>
-				<div class="header-third-child">
-					<a href="" class="social-icon ln-icon link">
+				<div class="d-none d-md-flex col-md-4 justify-content-md-end">
+					<a
+						href=""
+						class="social-icon ln-icon link col-md-2 col-lg-2 header-icon"
+					>
 						<i class="fab fa-linkedin-in"></i>
 					</a>
-					<a href="" class="social-icon tw-icon link">
+					<a
+						href=""
+						class="social-icon tw-icon link col-md-2 col-lg-2 header-icon"
+					>
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a href="" class="social-icon fb-icon link">
+					<a
+						href=""
+						class="social-icon fb-icon link col-md-2 col-lg-1 header-icon"
+					>
 						<i class="fab fa-facebook"></i>
 					</a>
 				</div>
 			</header>
-			<div class="nav-bar">
-				<div class="nav-ribbon">
-					<div class="nav-ribbon-first-child">
-						<i class="fas fa-globe globe"></i>
-						<div class="india-button">
-							India
-							<i class="fas fa-caret-down caret"></i>
-						</div>
-					</div>
-					<div class="nav-ribbon-last-child">
-						<div>
-							<a href="/" class="link">Home</a>
-						</div>
-						<div>
-							<a href="" class="link">Milestones</a>
-						</div>
-						<div>
-							<a href="" class="link">Interview Tips</a>
-						</div>
-						<div>
-							<a href="" class="link">Current Openings</a>
-						</div>
-						<div>
-							<a href="./media.html" class="link">Media</a>
-						</div>
-						<div>
-							<a href="./contact.html" class="link">Contact Us</a>
-						</div>
-						<div class="last-child">
-							<a href="" class="">
+			<nav
+				class="
+					navbar
+					nav-ribbon
+					navbar-expand-md navbar-light
+					justify-content-between
+					align-items-md-center
+				"
+			>
+				<div class="dropdown">
+					<button
+						class="btn dropdown-toggle ps-0"
+						type="button"
+						id="dropdownMenuButton1"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						<i class="fas fa-globe link"></i>
+						<p class="d-inline-block link mb-md-0">India</p>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li>
+							<a class="dropdown-item" href="./pages/media.html">India</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="./pages/philipines/index.html"
+								>Philippines</a
+							>
+						</li>
+					</ul>
+				</div>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#toggleMobileMenu"
+					arial-control="toggleMobileMenu"
+					arial-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse col-md-10 justify-content-md-center"
+					id="toggleMobileMenu"
+				>
+					<ul
+						class="
+							navbar-nav
+							text-center text-md-start
+							align-middle align-items-md-center
+							col-md-12
+							justify-content-md-between
+						"
+					>
+						<li>
+							<a href="#" class="nav-link link">Home</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link link">Milestones</a>
+						</li>
+						<li class="d-md-none d-lg-block">
+							<a href="#" class="nav-link link">Interview Tips</a>
+						</li>
+						<li class="d-md-none d-lg-block">
+							<a href="#" class="nav-link link">Current Openings</a>
+						</li>
+						<li>
+							<a href="./pages/media.html" class="nav-link link">Media</a>
+						</li>
+						<li>
+							<a href="./pages/contact.html" class="nav-link link"
+								>Contact Us</a
+							>
+						</li>
+						<li class="nav-item dropdown link d-none d-md-block d-lg-none">
+							<a
+								class="nav-link link dropdown-toggle"
+								href="#"
+								data-bs-toggle="dropdown"
+							>
+								More
+							</a>
+							<ul class="dropdown-menu fade-up">
+								<li><a class="dropdown-item" href="#">Interview Tips</a></li>
+								<li><a class="dropdown-item" href="#">Current Openings</a></li>
+							</ul>
+						</li>
+						<li class="col-md-3 col-lg-2">
+							<a href="">
 								<button class="action-button">
-									<i class="fas fa-search"></i> Search jobs
+									<i class="fas fa-search d-inline-block me-md-1"></i> Search
+									jobs
 								</button>
 							</a>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
-				<div class="drop-down">
-					<div class="countries">
-						<a href="">India</a>
-						<a href="">Philippines</a>
-					</div>
-				</div>
-			</div>
+			</nav>
 		</div>
-		<div class="banner">
-			<div class="container">
+		<div class="banner d-flex justify-content-center align-items-center">
+			<div class="container d-flex justify-content-center align-items-center">
 				<p class="banner-text">Contact Us</p>
 			</div>
 		</div>
 		<main>
 			<div class="main-box-form">
 				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-6">
-							<ul class="tabs">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div class="col-12 col-lg-6">
+							<ul class="d-flex justify-content-evenly tabs">
 								<li class="tab active" data-tab-target="#mumbai">Mumbai</li>
 								<li class="tab" data-tab-target="#bangalore">Bangalore</li>
 								<li class="tab" data-tab-target="#dehli">Dehli</li>
@@ -173,8 +256,8 @@
 							</div>
 						</div>
 
-						<div class="col-5 form-container">
-							<form action="" method="post" class="form">
+						<div class="col-12 col-lg-5 form-container">
+							<form action="" method="post" class="form mt-2 mt-md-5 mt-lg-5 mb-2">
 								<input
 									type="text"
 									name=""
@@ -214,35 +297,41 @@
 			<div class="container">
 				<h2 class="india-offices-title">Our Offices in India</h2>
 				<div class="india-offices-content row justify-content-between">
-					<div class="col-8 row">
-						<div class="col-4">
-							<h3>Mumbai</h3>
+					<div class="col-12 col-lg-8 row justify-content-md-between">
+						<div class="col-12 col-md-6 col-xl-4">
+							<h3 class="text-sm-center">Mumbai</h3>
 							<p>
 								508, Palm Spring Complex, Above Croma, Malad West, Mumbai 400064
 							</p>
 							<p><i class="fas fa-phone"></i> 9324950067 / 9619467677</p>
-							<p><i class="far fa-envelope"></i> Feedback@Gratitudeindia.com</p>
+							<p class="last-paragraph">
+								<i class="far fa-envelope"></i> Feedback@Gratitudeindia.com
+							</p>
 						</div>
-						<div class="col-4">
-							<h3>Bangalore</h3>
+						<div class="col-12 col-md-6 col-xl-4 px-md-4 px-xxl-0">
+							<h3 class="text-sm-center">Bangalore</h3>
 							<p>
 								Regus, 8th Floor, The Estate, Dickenson Road, Near Trinity Metro
 								Station, Next To Tanshiq Jewellery
 							</p>
 							<p><i class="fas fa-phone"></i> 9619867388/ 9619498875</p>
-							<p><i class="far fa-envelope"></i> Feedback@Gratitudeindia.com</p>
+							<p class="last-paragraph">
+								<i class="far fa-envelope"></i> Feedback@Gratitudeindia.com
+							</p>
 						</div>
-						<div class="col-4">
-							<h3>Delhi</h3>
+						<div class="col-12 col-md-6 col-xl-4">
+							<h3 class="text-sm-center">Delhi</h3>
 							<p>
 								H-8 2nd Floor Cabin No 5 Kailash Park Opposite Metro Piller No
 								330 New Delhi 15, Nearest Metro Station Moti Nagar/ Ramesh Nagar
 							</p>
 							<p><i class="fas fa-phone"></i> 9619867388/ 9619498875</p>
-							<p><i class="far fa-envelope"></i> Feedback@Gratitudeindia.com</p>
+							<p class="last-paragraph">
+								<i class="far fa-envelope"></i> Feedback@Gratitudeindia.com
+							</p>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="d-none d-lg-block col-lg-4">
 						<form action="" method="post">
 							<input
 								type="text"
@@ -262,6 +351,7 @@
 								name=""
 								placeholder="Enter phone number"
 								class="form-control form-control-lg mb-3"
+								`
 							/>
 							<textarea
 								name=""
@@ -277,30 +367,55 @@
 					</div>
 				</div>
 				<div>
-					<div class="d-flex justify-content-start mt-5 mb-3">
-						<div class="col-4 text-center">
+					<div
+						class="
+							d-md-flex
+							flex-md-wrap
+							justify-content-start justify-content-md-between
+							mt-3 mt-md-5
+							mb-3
+						"
+					>
+						<div
+							class="
+								col-md-6 col-xxl-3
+								text-center text-md-start text-xxl-center
+								mb-md-3
+							"
+						>
 							<i class="fas fa-map-marker-alt footer-icon"></i>
 							410/508, Palm Spring Complex, Above Croma, Malad West, Mumbai
 							400064
 						</div>
-						<div class="col-3">
-							<i
-								class="far fa-envelope footer-icon"
-								style="display: inline-block; margin-left: 10%"
-							></i>
+						<div
+							class="col-md-5 col-xxl-3 mt-2 mt-md-0 mb-md-3 text-xxl-center"
+						>
+							<i class="far fa-envelope footer-icon envelope ms-md-0"></i>
 							bangbpo@gratitudeindia.com
 						</div>
-						<div class="col-3">
-							<i class="fas fa-phone footer-icon"></i> 9324950067 / 9619467677
+						<div class="col-md-6 col-xxl-3 mt-2 mt-md-0 text-xxl-center">
+							<i class="fas fa-phone footer-icon phone"></i> 9324950067 /
+							9619467677
 						</div>
-						<div class="col-1 justify-content-between row">
-							<a href="" class="col-1 social-icon ln-icon">
+						<div
+							class="
+								col-6 col-md-5 col-xxl-3
+								m-md-0
+								justify-content-between
+								justify-content-md-start
+								justify-content-xxl-center
+								row
+								icon-pack
+								text-xxl-center
+							"
+						>
+							<a href="" class="col-2 col-md-2 social-icon ln-icon p-md-0">
 								<i class="fab fa-linkedin-in"></i>
 							</a>
-							<a href="" class="col-1 social-icon tw-icon">
+							<a href="" class="col-2 col-md-2 social-icon tw-icon p-md-0">
 								<i class="fab fa-twitter"></i>
 							</a>
-							<a href="" class="col-1 social-icon fb-icon">
+							<a href="" class="col-2 col-md-2 social-icon fb-icon p-md-0">
 								<i class="fab fa-facebook"></i>
 							</a>
 						</div>
