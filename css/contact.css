@@ -260,9 +260,6 @@ header .social-icon {
 	.icon-pack {
 		margin: 0.5em auto !important;
 	}
-	.tabs {
-		/* justify-content: space-between; */
-	}
 	.tab {
 		flex: 0 0 20%;
 		font-size: 60%;
