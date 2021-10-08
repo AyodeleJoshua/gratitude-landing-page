@@ -6,37 +6,16 @@
 	color: black;
 	/* font-weight: bold; */
 }
-.header,
-.header-first-child,
-.header-third-child {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
+
 .header {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	/* background-color: #d1d1d1; */
 }
-.header > * {
-	flex: 0 0 33.3%;
-}
 .header-second-child {
 	text-align: center;
 	font-size: 150%;
 	font-weight: bold;
-}
-.header-third-child {
-	justify-content: end;
-}
-.header-third-child > * {
-	flex: 0 0 10%;
-}
-.header-third-child .fb-icon {
-	flex: 0 0 2%;
-}
-.header-second-child p {
-	margin-bottom: 0;
 }
 .header-second-child a {
 	color: #000;
@@ -53,55 +32,19 @@
 	vertical-align: middle;
 }
 .nav-ribbon {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
 .nav-ribbon-first-child {
-	flex: 0 0 20%;
-	display: flex;
-	align-items: center;
 	font-weight: bold;
-}
-.india-button {
-	display: inline-flex;
-	cursor: pointer;
-}
-.india-button i {
-	display: inline-block;
-	margin-left: 10%;
-}
-.nav-ribbon-last-child {
-	flex: 0 0 80%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.nav-ribbon-last-child .last-child {
-	flex: 0 16.6%;
-}
-.nav-bar {
-	position: relative;
-}
-.globe,
-.caret {
-	font-size: 150%;
-}
-.globe {
-	margin-right: 8px;
 }
 .action-button {
 	background-color: #a239ca;
 	width: 100%;
-	padding: 10%;
+	padding: 8%;
 	border: 0;
 	border-radius: 30px;
 	font-weight: bold;
 	color: #fff;
-}
-.action-button i {
-	display: inline-block;
-	margin-right: 10px;
 }
 .logo img {
 	width: 8%;
@@ -118,16 +61,15 @@
 }
 .link {
 	text-decoration: none;
-	color: #000;
+	color: #000 !important;
 	font-weight: bold;
 	cursor: pointer;
 }
 .link:hover {
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.6) !important;
 }
 
-.countries > .caret,
-.countries > p {
+.countries {
 	cursor: pointer;
 }
 .banner {
@@ -135,32 +77,27 @@
 		url('../assets/images/pexels-tima-miroshnichenko-5439455.jpg');
 	background-position: 50% 40%;
 	background-size: cover;
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 	width: 100%;
 }
 .banner-text {
 	font-size: 350%;
 	font-weight: bold;
-	line-height: 150%;
+	line-height: 130%;
 	color: #fff;
-	margin-top: 80px;
+	margin-top: 40px;
+	text-align: center;
 }
 .banner-button {
 	background-color: #a239ca;
-	width: 20%;
-	height: 50px;
+	width: 25%;
 	border: 0;
 	border-radius: 30px;
-}
-.banner-button a {
 	color: #fff;
-	font-size: 130%;
 	font-weight: bold;
-	padding: 2%;
-}
-.banner-button a:hover {
-	color: #fff;
+	font-size: 130%;
+	margin-left: 38%;
 }
 .banner-button i {
 	display: inline-block;
@@ -178,36 +115,15 @@
 	width: 100%;
 	padding: 10%;
 	transition: all 0.5s;
+	border-bottom: 2px solid #eeeeee;
 }
-/* .countries a {
-	margin-bottom: 4%;
-	text-decoration: none;
-	color: #000;
-	font-weight: bold;
-	font-size: 120%;
-	width: 100%;
-	padding: 10%;
-	transition: all 0.5s;
-} */
+
 .countries a:hover {
 	background-color: #eeeeee;
 	color: rgb(46, 46, 46);
 }
-.drop-down {
-	border: 0;
-	width: 11%;
-	height: 0;
-	position: absolute;
-	top: 80%;
-	left: 0;
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 0;
-	overflow: hidden;
-	border-bottom: 2px solid #eeeeee;
-	transition: all 0.5s;
-}
 main {
+	width: 100%;
 	overflow: hidden;
 	/* border: 2px solid red; */
 }
@@ -218,14 +134,9 @@ main {
 .form-group {
 	margin: 3% auto;
 	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	overflow-x: hidden;
 }
 .form-group > * {
-	flex: 0 0 20%;
-	margin-right: 4%;
 	height: 50px;
 	padding: 2%;
 	text-transform: uppercase;
@@ -251,6 +162,7 @@ main {
 .services h2,
 .android-application h2,
 .dream-job-title,
+.everywhere h2,
 .media-coverage-title,
 .india-offices-title {
 	font-weight: bold;
@@ -274,13 +186,7 @@ main {
 .text-margin {
 	margin-top: 10%;
 }
-.card-1 {
-	padding-bottom: 4%;
-}
-.card-2 {
-	padding-bottom: 4%;
-}
-.card-3 {
+.card {
 	padding-bottom: 4%;
 }
 .services-title {
@@ -307,14 +213,12 @@ main {
 }
 .services-link,
 .services-link:hover {
-	color: #fff;
+	color: #fff !important;
 }
 .everywhere {
 	margin: 3% auto;
 }
 .everywhere h2 {
-	font-weight: bold;
-	font-size: 300%;
 	margin-bottom: 1.5%;
 }
 .everywhere h3 {
@@ -365,6 +269,7 @@ main {
 }
 .android-application button:last-of-type {
 	margin-left: 2%;
+	width: 40%;
 }
 .android-application button a {
 	text-decoration: none;
@@ -381,7 +286,7 @@ main {
 	font-size: 130%;
 }
 .dream-job-content button {
-	width: 50%;
+	width: 80%;
 	padding: 2%;
 	background-color: #a239ca;
 	color: #fff;
@@ -446,4 +351,233 @@ header .social-icon {
 }
 .copyright {
 	font-weight: bold;
+}
+.envelope {
+	display: inline-block;
+	margin-left: 10%;
+}
+.dropdown-item,
+.dropdown-toggle p {
+	font-size: 110%;
+	font-weight: bold;
+}
+@media (min-width: 1024px) {
+	.banner-button {
+		padding: .6em;
+	}
+	.banner-text {
+		margin-top: .8em;
+	}
+	.android-application h2 {
+		margin-bottom: .2em;
+	}
+	.image-container {
+		margin: 0;
+	}
+	.android-application-flex {
+		margin: 0 !important;
+	}
+	.android-application-child {
+		padding: 1.8em 0 2em 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.logo img {
+		width: 12%;
+	}
+	.logo {
+		text-align: right;
+	}
+	.header-icon {
+		margin-left: 8%;
+	}
+	.banner {
+		height: 350px;
+	}
+	.banner-text {
+		font-size: 300%;
+		margin-top: 40px;
+		line-height: 130%;
+		text-align: center;
+	}
+	.banner a {
+		font-weight: bold;
+		width: 20%;
+		font-size: 130%;
+	}
+	.banner-button {
+		width: 35%;
+		padding-top: 0.4em;
+		padding-bottom: 0.4em;
+		margin-left: 32%;
+	}
+	.card-title {
+		font-size: 150%;
+		margin-bottom: 0;
+	}
+	.card-text {
+		font-size: 110%;
+		text-align: center;
+	}
+	.services-button-2nd-child {
+		margin-top: 1.1em;
+	}
+	.card {
+		margin-bottom: 2.5em;
+	}
+	.card-2 {
+		padding-bottom: 1.2em;
+	}
+	.services-content {
+		padding-bottom: 3%;
+	}
+	.everywhere h2 {
+		padding-bottom: 2%;
+	}
+	.everywhere-figures {
+		margin-bottom: 1em;
+	}
+	.everywhere {
+		margin-bottom: 0;
+	}
+	.android-application h2 {
+		margin-bottom: 1%;
+	}
+	.image-container {
+		margin-left: 0;
+	}
+	.android-application button:last-of-type {
+		width: 80%;
+		margin-bottom: 0.5em;
+	}
+}
+@media (max-width: 567px) {
+	.banner-text {
+		text-align: center;
+	}
+	.playstore-link {
+		width: 80%;
+		margin: auto;
+	}
+	.image-container {
+		margin: 0.5em !important;
+	}
+	.action-button {
+		padding: 3%;
+		width: 50%;
+		border-radius: 30px;
+	}
+	.banner {
+		height: 200px;
+		width: 100%;
+	}
+	.banner-text {
+		margin-top: 0.8em;
+		margin-bottom: 0;
+		font-size: 150%;
+		padding: 3%;
+		line-height: 1.3em;
+	}
+	.banner-button {
+		width: 80%;
+		margin-left: 10%;
+		padding: 0.4em;
+	}
+	.banner-button a {
+		font-size: 100%;
+	}
+	.banner-button i {
+		margin-right: 1%;
+	}
+	.form-group > * {
+		width: 100%;
+		height: 40px;
+		margin-bottom: 8px;
+	}
+	.form-group .client-box-content h2,
+	.services h2,
+	.android-application h2,
+	.dream-job-title,
+	.media-coverage-title,
+	.india-offices-title {
+		font-size: 150%;
+		text-align: center;
+	}
+	.everywhere h2 {
+		font-size: 150%;
+		text-align: center;
+		margin-bottom: 3%;
+	}
+	.client-box {
+		margin-bottom: 0;
+	}
+	.services {
+		margin-top: -8%;
+	}
+	.services-content {
+		padding-bottom: 1%;
+	}
+	.services-card {
+		margin-bottom: 10%;
+		padding: 4%;
+	}
+	.card-title {
+		font-size: 120%;
+	}
+	.card-text {
+		margin-top: 2%;
+		font-size: 100%;
+	}
+	.everywhere {
+		margin-bottom: 0;
+	}
+	.everywhere p {
+		font-size: 100%;
+	}
+	.playstore-link {
+		width: 100%;
+	}
+	.playstore-link button {
+		width: 100% !important;
+		font-size: 100%;
+		padding: 0.5em 0.2em;
+		margin-bottom: 0.5em;
+	}
+	.android-application h2 {
+		margin-bottom: 0.1em;
+	}
+	.android-application {
+		padding-bottom: 0.4em;
+	}
+	.dream-job-content button {
+		width: 100%;
+		font-size: 100%;
+	}
+	.dream-job-content p {
+		font-size: 100%;
+	}
+	.dream-job-content {
+		padding-bottom: 0.4em;
+	}
+	.media-coverage {
+		padding-bottom: 0;
+	}
+	.india-offices-content h3 {
+		font-size: 1.5em;
+	}
+	.india-offices-content p {
+		margin-bottom: 0.1em;
+	}
+	.india-offices-content p.last-paragraph {
+		margin-bottom: 1em;
+	}
+	.envelope {
+		margin: 0 0.2em 0 0.4em;
+	}
+	.phone {
+		margin: 0 0.2em 0 0.4em;
+	}
+	.icon-pack {
+		margin: 0.5em auto !important;
+	}
 }
