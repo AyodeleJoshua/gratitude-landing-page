@@ -19,6 +19,7 @@
 		<link rel="icon" type="image/png" href="images/main_logo_favicon.png" />
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -49,7 +50,7 @@
 	</head>
 	<body class="body">
 		<div class="container">
-			<header class="d-md-flex justify-content-md-between mt-4 mb-md-4 mb-2">
+			<header class="d-md-flex justify-content-md-between mt-4 mt-md-6 mb-2">
 				<div
 					class="
 						d-none d-md-flex
@@ -69,13 +70,13 @@
 					</a>
 				</div>
 				<div class="d-none d-md-flex col-md-4 justify-content-md-end">
-					<a href="" class="social-icon ln-icon link col-md-1">
+					<a href="" class="social-icon ln-icon link col-md-1 col-lg-2 header-icon">
 						<i class="fab fa-linkedin-in"></i>
 					</a>
-					<a href="" class="social-icon tw-icon link col-md-1">
+					<a href="" class="social-icon tw-icon link col-md-1 col-lg-2 header-icon">
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a href="" class="social-icon fb-icon link col-md-1">
+					<a href="" class="social-icon fb-icon link col-md-1 col-lg-1 header-icon">
 						<i class="fab fa-facebook"></i>
 					</a>
 				</div>
@@ -89,24 +90,27 @@
 					align-items-md-center
 				"
 			>
-				<div class="col-md-2 align-middle">
-					<div style="width: 50%; position: relative">
-						<a class="navbar-brand countries-button link">
-							<i class="fas fa-globe"></i>
-							<p class="d-inline-block">India</p>
-							<i class="fas fa-caret-down"></i>
-						</a>
-						<div class="drop-down">
-							<p>
-								<a href="./pages/media.html" class="link">India</a>
-							</p>
-							<p>
-								<a href="./pages/philipines/index.html" class="link"
-									>Philippines</a
-								>
-							</p>
-						</div>
-					</div>
+				<div class="dropdown">
+					<button
+						class="btn dropdown-toggle ps-0"
+						type="button"
+						id="dropdownMenuButton1"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						<i class="fas fa-globe link"></i>
+						<p class="d-inline-block link mb-md-0">India</p>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li>
+							<a class="dropdown-item" href="./pages/media.html">India</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="./pages/philipines/index.html"
+								>Philippines</a
+							>
+						</li>
+					</ul>
 				</div>
 				<button
 					class="navbar-toggler"
@@ -127,7 +131,7 @@
 						class="
 							navbar-nav
 							text-center text-md-start
-							align-middle
+							align-middle align-items-md-center
 							col-md-12
 							justify-content-md-between
 						"
@@ -138,10 +142,10 @@
 						<li>
 							<a href="#" class="nav-link link">Milestones</a>
 						</li>
-						<li>
+						<li class="d-md-none d-lg-block">
 							<a href="#" class="nav-link link">Interview Tips</a>
 						</li>
-						<li>
+						<li class="d-md-none d-lg-block">
 							<a href="#" class="nav-link link">Current Openings</a>
 						</li>
 						<li>
@@ -152,8 +156,21 @@
 								>Contact Us</a
 							>
 						</li>
-						<li class="col-md-2">
-							<a href="" class="">
+						<li class="nav-item dropdown link d-none d-md-block d-lg-none">
+							<a
+								class="nav-link link dropdown-toggle"
+								href="#"
+								data-bs-toggle="dropdown"
+							>
+								More
+							</a>
+							<ul class="dropdown-menu fade-up">
+								<li><a class="dropdown-item" href="#">Interview Tips</a></li>
+								<li><a class="dropdown-item" href="#">Current Openings</a></li>
+							</ul>
+						</li>
+						<li class="col-md-3 col-lg-2">
+							<a href="">
 								<button class="action-button">
 									<i class="fas fa-search d-inline-block me-md-1"></i> Search
 									jobs
@@ -171,12 +188,12 @@
 					Proprietory Recruitment <br />
 					Platform
 				</p>
-				<button class="banner-button">
-					<a href="" class="text-decoration-none">
+				<a href="" class="text-decoration-none">
+					<button class="banner-button">
 						<i class="fas fa-search"></i>
 						Search jobs
-					</a>
-				</button>
+					</button>
+				</a>
 			</div>
 		</div>
 		<main>
@@ -186,12 +203,22 @@
 						class="
 							form-group
 							d-md-flex
-							justify-content-evenly
+							justify-content-evenly justify-content-md-between
 							align-items-center
 						"
 					>
-						<input type="text" placeholder="JOB TITLE" class="col-md-3" />
-						<input type="text" placeholder="LOCATION" class="col-md-3" />
+						<input
+							type="text"
+							placeholder="JOB TITLE"
+							class="col-md-4"
+							class="form-input"
+						/>
+						<input
+							type="text"
+							placeholder="LOCATION"
+							class="col-md-4"
+							class="form-input"
+						/>
 						<button class="col-md-3">
 							<a href="" class="link"> Search</a>
 						</button>
@@ -219,8 +246,8 @@
 				<div class="container services-content">
 					<h2>Our Services</h2>
 					<div class="row justify-content-between justify-content-sm-center">
-						<div class="col-md-4">
-							<div class="card services-card card-1">
+						<div class="col-md-6 col-lg-4">
+							<div class="card services-card">
 								<div class="card-body">
 									<h3 class="card-title text-center services-title">
 										Entry Level Hiring
@@ -233,16 +260,16 @@
 										Gain Maximum Output From The Candidate And Everything The
 										Company Has To Offer.
 									</p>
-									<button class="services-button">
-										<a href="" class="link services-link">
+									<a href="" class="link services-link">
+										<button class="services-button">
 											Get Started
 											<i class="fas fa-arrow-circle-right"></i>
-										</a>
-									</button>
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-6 col-lg-4">
 							<div class="card services-card card-2">
 								<div class="card-body">
 									<h3 class="card-title text-center services-title">
@@ -256,17 +283,17 @@
 										Finding Right Candidates Who Can Contribute To Our Client’s
 										Success.
 									</p>
-									<button class="services-button services-button-2nd-child">
-										<a href="" class="link services-link">
+									<a href="" class="link services-link">
+										<button class="services-button services-button-2nd-child">
 											Get Started
 											<i class="fas fa-arrow-circle-right"></i>
-										</a>
-									</button>
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="card services-card card-3">
+						<div class="col-md-6 col-lg-4">
+							<div class="card services-card">
 								<div class="card-body">
 									<h3 class="card-title text-center services-title">
 										Payroll Management<br />
@@ -280,12 +307,12 @@
 										Vast Base Of Candidates, Who We Rigorously Screen And
 										Evaluate To Ensure The Right Fit Within Your Organization.
 									</p>
-									<button class="services-button services-button-3rd-child">
-										<a href="" class="link services-link">
+									<a href="" class="link services-link">
+										<button class="services-button services-button-3rd-child">
 											Get Started
 											<i class="fas fa-arrow-circle-right"></i>
-										</a>
-									</button>
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -296,23 +323,23 @@
 				<div class="container">
 					<h2>Our Services are Everywhere</h2>
 					<div class="d-flex flex-wrap justify-content-between">
-						<div class="col-5 col-md-2">
+						<div class="col-5 col-md-4 col-lg-2 everywhere-figures">
 							<h3><span data-value="200" class="count">200</span>+</h3>
 							<p>Client</p>
 						</div>
-						<div class="col-6 col-md-3">
+						<div class="col-6 col-md-4 col-lg-3 everywhere-figures">
 							<h3><span data-value="50000" class="count">50000</span>+</h3>
 							<p>Candidates Placed</p>
 						</div>
-						<div class="col-6 col-md-2">
+						<div class="col-6 col-md-4 col-lg-2 everywhere-figures">
 							<h3><span data-value="100" class="count">100</span>%</h3>
 							<p>Satisfaction</p>
 						</div>
-						<div class="col-6 col-md-3">
+						<div class="col-6 col-md-6 col-lg-3 everywhere-figures">
 							<h3><span data-value="300" class="count">300</span>+</h3>
 							<p>Award Wining</p>
 						</div>
-						<div class="col-12 col-md-2">
+						<div class="col-12 col-md-6 col-lg-2 everywhere-figures">
 							<h3><span data-value="200" class="count">200</span>+</h3>
 							<p>Recruiters</p>
 						</div>
@@ -322,29 +349,39 @@
 			<div class="android-application">
 				<div class="container android-application-child">
 					<h2>We are on Playstore</h2>
-					<div class="row align-items-center justify-content-center justify-content-md-between">
-						<div class="d-none d-md-block col-md-6">
+					<div
+						class="
+							row
+							align-items-center align-items-md-start
+							justify-content-center justify-content-lg-between android-application-flex
+						"
+					>
+						<div class="d-none d-md-block col-md-6 p-0">
 							<p class="playstore-text">
 								Gratitude India Introduce's Technology Driven Apps For Job
 								Seekers With
 							</p>
 							<ol>
 								<li class="playstore-text">
-									Interview Tips And Tricks (BPO Interview Briefing)
+									Interview Tips And Tricks <br />
+									(BPO Interview Briefing)
 								</li>
 								<li class="playstore-text">
-									Interview Tips And Tricks (BPO Interview Briefing) Myglit.Com
-									A Job Portal Recognised By Huge Media Company
+									Interview Tips And Tricks <br />
+									(BPO Interview Briefing) Myglit.Com A Job Portal Recognised By
+									Huge Media Company
 								</li>
 							</ol>
-							<button>
-								<a href=""><i class="fab fa-android"></i> MyGlt Jobs</a>
-							</button>
-							<button>
-								<a href=""><i class="fab fa-android"></i> BPO Interview</a>
-							</button>
+
+							<a href="">
+								<button><i class="fab fa-android"></i> MyGlt Jobs</button>
+							</a>
+
+							<a href="">
+								<button><i class="fab fa-android"></i> BPO Interview</button>
+							</a>
 						</div>
-						<div class="col-8 col-sm-6 col-md-4 image-container">
+						<div class="col-8 col-sm-6 col-md-6 col-lg-4 image-container p-0">
 							<a href="">
 								<img
 									src="./assets/images/git_android_1.png"
@@ -353,7 +390,9 @@
 								/>
 							</a>
 						</div>
-						<div class="col-12 col-sm-5 col-md-5 d-flex d-md-none flex-column ps-0">
+						<div
+							class="col-12 col-sm-5 col-md-5 d-flex d-md-none flex-column ps-0"
+						>
 							<a href="" class="playstore-link">
 								<button class="playstore-btn">
 									<i class="fab fa-android"></i> MyGlt Jobs
@@ -381,8 +420,12 @@
 								<button>REGISTER ON MYGLIT JOBS</button>
 							</a>
 						</div>
-						<div class="d-none d-md-block col-4 svg">
-							<object data="assets/svg/job svg.svg" width="300" height="300"></object>
+						<div class="d-none d-md-block col-5 svg">
+							<object
+								data="assets/svg/job svg.svg"
+								width="300"
+								height="300"
+							></object>
 						</div>
 					</div>
 				</div>
@@ -505,35 +548,41 @@
 			<div class="container">
 				<h2 class="india-offices-title">Our Offices in India</h2>
 				<div class="india-offices-content row justify-content-between">
-					<div class="col-12 col-md-8 row">
-						<div class="col-12 col-md-4">
+					<div class="col-12 col-lg-8 row justify-content-md-between">
+						<div class="col-12 col-md-6 col-xl-4">
 							<h3 class="text-sm-center">Mumbai</h3>
 							<p>
 								508, Palm Spring Complex, Above Croma, Malad West, Mumbai 400064
 							</p>
 							<p><i class="fas fa-phone"></i> 9324950067 / 9619467677</p>
-							<p class="last-paragraph"><i class="far fa-envelope"></i> Feedback@Gratitudeindia.com</p>
+							<p class="last-paragraph">
+								<i class="far fa-envelope"></i> Feedback@Gratitudeindia.com
+							</p>
 						</div>
-						<div class="col-12 col-md-4">
+						<div class="col-12 col-md-6 col-xl-4 px-md-4 px-xxl-0">
 							<h3 class="text-sm-center">Bangalore</h3>
 							<p>
 								Regus, 8th Floor, The Estate, Dickenson Road, Near Trinity Metro
 								Station, Next To Tanshiq Jewellery
 							</p>
 							<p><i class="fas fa-phone"></i> 9619867388/ 9619498875</p>
-							<p class="last-paragraph"><i class="far fa-envelope"></i> Feedback@Gratitudeindia.com</p>
+							<p class="last-paragraph">
+								<i class="far fa-envelope"></i> Feedback@Gratitudeindia.com
+							</p>
 						</div>
-						<div class="col-12 col-md-4">
+						<div class="col-12 col-md-6 col-xl-4">
 							<h3 class="text-sm-center">Delhi</h3>
 							<p>
 								H-8 2nd Floor Cabin No 5 Kailash Park Opposite Metro Piller No
 								330 New Delhi 15, Nearest Metro Station Moti Nagar/ Ramesh Nagar
 							</p>
 							<p><i class="fas fa-phone"></i> 9619867388/ 9619498875</p>
-							<p class="last-paragraph"><i class="far fa-envelope"></i> Feedback@Gratitudeindia.com</p>
+							<p class="last-paragraph">
+								<i class="far fa-envelope"></i> Feedback@Gratitudeindia.com
+							</p>
 						</div>
 					</div>
-					<div class="d-none d-md-block col-md-4">
+					<div class="d-none d-lg-block col-lg-4">
 						<form action="" method="post">
 							<input
 								type="text"
@@ -569,29 +618,38 @@
 					</div>
 				</div>
 				<div>
-					<div class="d-md-flex justify-content-start mt-3 mt-md-5 mb-3">
-						<div class="col-md-4 text-center">
+					<div
+						class="
+							d-md-flex
+							flex-md-wrap
+							justify-content-start justify-content-md-between
+							mt-3 mt-md-5
+							mb-3
+						"
+					>
+						<div class="col-md-6 col-xxl-3 text-center text-md-start text-xxl-center mb-md-3">
 							<i class="fas fa-map-marker-alt footer-icon"></i>
 							410/508, Palm Spring Complex, Above Croma, Malad West, Mumbai
 							400064
 						</div>
-						<div class="col-md-3 mt-2">
-							<i
-								class="far fa-envelope footer-icon envelope"
-							></i>
+						<div class="col-md-5 col-xxl-3 mt-2 mt-md-0 mb-md-3 text-xxl-center">
+							<i class="far fa-envelope footer-icon envelope ms-md-0"></i>
 							bangbpo@gratitudeindia.com
 						</div>
-						<div class="col-md-3 mt-2">
-							<i class="fas fa-phone footer-icon phone"></i> 9324950067 / 9619467677
+						<div class="col-md-6 col-xxl-3 mt-2 mt-md-0 text-xxl-center">
+							<i class="fas fa-phone footer-icon phone"></i> 9324950067 /
+							9619467677
 						</div>
-						<div class="col-6 col-md-2 justify-content-between row icon-pack">
-							<a href="" class="col-2 col-md-1 social-icon ln-icon">
+						<div
+							class="col-6 col-md-5 col-xxl-3 m-md-0 justify-content-between justify-content-md-start justify-content-xxl-center row icon-pack text-xxl-center"
+						>
+							<a href="" class="col-2 col-md-2 social-icon ln-icon p-md-0">
 								<i class="fab fa-linkedin-in"></i>
 							</a>
-							<a href="" class="col-2 col-md-1 social-icon tw-icon">
+							<a href="" class="col-2 col-md-2 social-icon tw-icon p-md-0">
 								<i class="fab fa-twitter"></i>
 							</a>
-							<a href="" class="col-2 col-md-1 social-icon fb-icon">
+							<a href="" class="col-2 col-md-2 social-icon fb-icon p-md-0">
 								<i class="fab fa-facebook"></i>
 							</a>
 						</div>

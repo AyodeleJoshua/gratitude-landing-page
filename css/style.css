@@ -77,32 +77,27 @@
 		url('../assets/images/pexels-cottonbro-4065876.jpg');
 	background-position: 50% 40%;
 	background-size: cover;
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
 	width: 100%;
 }
 .banner-text {
 	font-size: 350%;
 	font-weight: bold;
-	line-height: 150%;
+	line-height: 130%;
 	color: #fff;
-	margin-top: 80px;
+	margin-top: 40px;
+	text-align: center;
 }
 .banner-button {
 	background-color: #a239ca;
-	width: 20%;
-	height: 50px;
+	width: 25%;
 	border: 0;
 	border-radius: 30px;
-}
-.banner-button a {
 	color: #fff;
-	font-size: 130%;
 	font-weight: bold;
-	padding: 2%;
-}
-.banner-button a:hover {
-	color: #fff;
+	font-size: 130%;
+	margin-left: 38%;
 }
 .banner-button i {
 	display: inline-block;
@@ -126,28 +121,6 @@
 .countries a:hover {
 	background-color: #eeeeee;
 	color: rgb(46, 46, 46);
-}
-.drop-down {
-	border: 0;
-	width: 130%;
-	height: 0;
-	font-size: 1.2em;
-	font-weight: normal;
-	position: absolute;
-	top: 80%;
-	left: -2%;
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 0;
-	overflow: hidden;
-	transition: all 0.5s;
-}
-.drop-down p {
-	padding: 0.5em 1em;
-	margin: 0;
-}
-.drop-down p:hover {
-	background-color: #eeeeee;
 }
 main {
 	width: 100%;
@@ -213,13 +186,7 @@ main {
 .text-margin {
 	margin-top: 10%;
 }
-.card-1 {
-	padding-bottom: 4%;
-}
-.card-2 {
-	padding-bottom: 4%;
-}
-.card-3 {
+.card {
 	padding-bottom: 4%;
 }
 .services-title {
@@ -246,7 +213,7 @@ main {
 }
 .services-link,
 .services-link:hover {
-	color: #fff;
+	color: #fff !important;
 }
 .everywhere {
 	margin: 3% auto;
@@ -386,21 +353,117 @@ header .social-icon {
 	font-weight: bold;
 }
 .envelope {
-	display: inline-block; 
+	display: inline-block;
 	margin-left: 10%;
 }
-@media (max-width: 566px) {
+.dropdown-item,
+.dropdown-toggle p {
+	font-size: 110%;
+	font-weight: bold;
+}
+@media (min-width: 1024px) {
+	.banner-button {
+		padding: .6em;
+	}
+	.banner-text {
+		margin-top: .8em;
+	}
+	.text-margin {
+		/* margin: 15% 0 20% 0; */
+	}
+	.android-application h2 {
+		margin-bottom: .2em;
+	}
+	.image-container {
+		margin: 0;
+	}
+	.android-application-flex {
+		margin: 0 !important;
+	}
+	.android-application-child {
+		padding: 1.8em 0 2em 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.logo img {
+		width: 12%;
+	}
+	.logo {
+		text-align: right;
+	}
+	.header-icon {
+		margin-left: 8%;
+	}
+	.banner {
+		height: 350px;
+	}
+	.banner-text {
+		font-size: 300%;
+		margin-top: 40px;
+		line-height: 130%;
+		text-align: center;
+	}
+	.banner a {
+		font-weight: bold;
+		width: 20%;
+		font-size: 130%;
+	}
+	.banner-button {
+		width: 35%;
+		padding-top: 0.4em;
+		padding-bottom: 0.4em;
+		margin-left: 32%;
+	}
+	.card-title {
+		font-size: 150%;
+		margin-bottom: 0;
+	}
+	.card-text {
+		font-size: 110%;
+		text-align: center;
+	}
+	.services-button-2nd-child {
+		margin-top: 1.1em;
+	}
+	.card {
+		margin-bottom: 2.5em;
+	}
+	.card-2 {
+		padding-bottom: 1.2em;
+	}
+	.services-content {
+		padding-bottom: 3%;
+	}
+	.everywhere h2 {
+		padding-bottom: 2%;
+	}
+	.everywhere-figures {
+		margin-bottom: 1em;
+	}
+	.everywhere {
+		margin-bottom: 0;
+	}
+	.android-application h2 {
+		margin-bottom: 1%;
+	}
+	.image-container {
+		margin-left: 0;
+	}
+	.android-application button:last-of-type {
+		width: 80%;
+		margin-bottom: 0.5em;
+	}
+}
+@media (max-width: 567px) {
+	.banner-text {
+		text-align: center;
+	}
 	.playstore-link {
 		width: 80%;
 		margin: auto;
 	}
 	.image-container {
-		margin: .5em !important;
-	}
-}
-@media (max-width: 567px) {
-	.drop-down {
-		width: 8em;
+		margin: 0.5em !important;
 	}
 	.action-button {
 		padding: 3%;
@@ -419,8 +482,9 @@ header .social-icon {
 		line-height: 1.3em;
 	}
 	.banner-button {
-		width: 50%;
-		height: 40px;
+		width: 80%;
+		margin-left: 10%;
+		padding: 0.4em;
 	}
 	.banner-button a {
 		font-size: 100%;
@@ -433,7 +497,7 @@ header .social-icon {
 		height: 40px;
 		margin-bottom: 8px;
 	}
-	.client-box-content h2,
+	.form-group .client-box-content h2,
 	.services h2,
 	.android-application h2,
 	.dream-job-title,
@@ -479,14 +543,14 @@ header .social-icon {
 	.playstore-link button {
 		width: 100% !important;
 		font-size: 100%;
-		padding: .5em .2em;
-		margin-bottom: .5em;
+		padding: 0.5em 0.2em;
+		margin-bottom: 0.5em;
 	}
 	.android-application h2 {
-		margin-bottom: .1em;
+		margin-bottom: 0.1em;
 	}
 	.android-application {
-		padding-bottom: .4em;
+		padding-bottom: 0.4em;
 	}
 	.dream-job-content button {
 		width: 100%;
@@ -496,7 +560,7 @@ header .social-icon {
 		font-size: 100%;
 	}
 	.dream-job-content {
-		padding-bottom: .4em;
+		padding-bottom: 0.4em;
 	}
 	.media-coverage {
 		padding-bottom: 0;
@@ -505,19 +569,18 @@ header .social-icon {
 		font-size: 1.5em;
 	}
 	.india-offices-content p {
-		margin-bottom: .1em;
+		margin-bottom: 0.1em;
 	}
 	.india-offices-content p.last-paragraph {
 		margin-bottom: 1em;
 	}
 	.envelope {
-		margin: 0 .2em 0 .4em;
+		margin: 0 0.2em 0 0.4em;
 	}
 	.phone {
-		margin: 0 .2em 0 .4em;		
+		margin: 0 0.2em 0 0.4em;
 	}
 	.icon-pack {
-		margin: .5em auto !important;
+		margin: 0.5em auto !important;
 	}
 }
-

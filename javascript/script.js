@@ -50,18 +50,3 @@ $(window).scroll(function () {
 		});
 	}
 });
-const india = document.querySelector('.countries-button');
-const dropDown = document.querySelector('.drop-down');
-
-let isDropDownOpen = false;
-
-india.addEventListener('click', () => {
-	if (isDropDownOpen) {
-		dropDown.style.border = '2px solid #d1d1d1';
-		dropDown.style.height = '5em';
-	} else {
-		dropDown.style.border = '0';
-		dropDown.style.height = '0';
-	}
-	isDropDownOpen = !isDropDownOpen;
-});
