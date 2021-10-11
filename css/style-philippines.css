@@ -313,6 +313,9 @@ footer {
 .india-offices-content h3 {
 	font-size: 200%;
 }
+.india-offices-info {
+	margin-bottom: .8em;
+}
 .textarea {
 	height: 20%;
 }
